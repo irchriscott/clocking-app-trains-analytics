@@ -1,0 +1,39 @@
+IMPORTANT !!!
+
+Before you run this app, please follow these instructions here below:
+
+1. MAKE SURE YOU HAVE INTERNET RUNNING IN YOUR COMPUTER (This will help you to download missing software or update them but also to install some dependencies for the app)
+2. Make sure you have installed XAMPP Server or WAMPP Server or LAMPP Server for Apache and MySQL that can run PHP 7+
+3. Make sure that you have installed NodeJS version 8 or higher
+4. Make sure that you have installed composer for PHP
+5. Make sure you have installed any web browser (Opera, Chrome or Firefox and others)
+
+- After installing these software, open xampp control panel install and run Apache and MySQL services
+
+- Then, go in your XAMPP directory, look for "htdocs" folder copy and paste the folder that contains this file (clocking app).
+
+- So, by default, you should have C:\xampp\htdocs\clockingapp
+
+- Then open your MySQL or open your browser and navigate to http://localhost/phpmyadmin/
+
+- If you have credintials, put them but if not, create a database and name it "clockingdb" or another database.
+
+- After creating a database, opem .env file and set DB_DATABASE to the created database name, DB_USERNAME to the username of your phpmyadmin account (default is root) and DB_PASSWORD to your password
+
+- After you have created your database, open your Command Promt, navigate to the directory of this file (C:\xampp\htdocs\clockingapp) and run these commands in the same order : 
+
+1. run "composer update" to install some missing dependencies and update composer
+2. run "php artisan migrate" to run migrations that will create tables in your database
+3. run "php artisan db:seed" to generate the default user that is in seeder with email: "info@trailanalytics.com" and password: "admin"
+4. run "npm install" to install some javascript dependecies for the font-end
+5. run "npm run dev" to compile your javascripts and scss
+
+- After running all these commands, open your browser and navigate to  "http://127.0.0.1/clockingapp/public/" or "http://localhost/clockingapp/public/" and login with default user 
+or run "php artisan serve" to start the php server and go to the link in command propmt.
+
+DEFAULT USER => email: "info@trailanalytics.com" and password: "admin"
+
+IF YOU FOLLOW ALL THESE STEPS, YOU APP WILL BE RUNNING VERY WELL. 
+
+THANK YOU AND ENJOY YOUR APP.
+
